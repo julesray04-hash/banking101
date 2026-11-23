@@ -21,6 +21,10 @@ public class AccountService {
         // only changes it if the account exists
         if (account != null) {
             account.setHolderName(holderName);
+
+            // updates the account holder's name
+            System.out.println("Account holder updated to: " + holderName);
+
             account.setBalance(balance);
         }
     }
